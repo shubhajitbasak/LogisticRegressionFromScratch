@@ -118,19 +118,14 @@ the input data in a matrix Form. Following are the Methods and their
 respective parameters.
 
 *Class :*  
-      *LogisticRegressor(alpha = 0.5 , iterations = 15000 , tol = 1e-8) * 
+      *{LogisticRegressor(alpha = 0.5 , iterations = 15000 , tol = 1e-8)}* 
 
-*Parameters :*
+*Parameters :*  
+     > alpha : learning rate  
+      > iterations : Maximum Number of Iterations for the Gradient Descent Iterations  
+      > tol : maximum tolerance level for the cost function
 
-alpha : learning rate
-
-iterations : Maximum Number of Iterations for the Gradient Descent Iterations
-
-tol : maximum tolerance level for the cost function
-
-*Methods :*
-
-Build the Model with the Training Data
+*Methods :* Build the Model with the Training Data
 
 fit (X,Y) --
 
@@ -138,31 +133,22 @@ Parameters :
 
 X : *{array-like, sparse matrix}, shape (m, n)*
 
--   Training Feature Vector where m is the number of sample and n is the
-    number of features
+ -Training Feature Vector where m is the number of sample and n is the number of features
 
-Y : *array-like, shape (m,)*
+Y : *array-like, shape (m,)*  
+ -Target (Dependent Variables) Vector Relative to X
 
--   Target (Dependent Variables) Vector Relative to X
+Returns :  
+>self : object
 
-Returns :
+predict(X) --  
+Parameters :  
+X : *{array-like, sparse matrix}, shape (m, n)*  
+-Test Feature Vector where m is the number of sample and n is the number of features  
 
-> self : object
-
-predict(X) --
-
-Parameters :
-
-X : *{array-like, sparse matrix}, shape (m, n)*
-
--   Test Feature Vector where m is the number of sample and n is the
-    number of features
-
-> Returns :
->
-> *array, shape(m)*
-
--   Predicted Class Label per sample
+Returns :  
+>*array, shape(m)*  
+-Predicted Class Label per sample
 
 **Pre-Requisites :**
 
