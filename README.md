@@ -6,9 +6,9 @@ Classification Algorithm as it is easy to implement, and we can extend
 the concept of Linear Regression to build the same. To minimise the cost
 function, I am using classic Gradient Descent Algorithm.
 
-**[Details of the Algorithm]**:
+**Details of the Algorithm**:
 
-[Binary Classification Implementation]:
+<em>Binary Classification Implementation:</em>
 
 We will first try to build a binary classifier where there will be two
 types of dependent variable. As the Dependent variables are Binary in
@@ -22,10 +22,9 @@ of binary result (0,1). To differentiate the data, we can set a
 threshold above which we will predict 1 and below that we predict 1,
 here the threshold might be 0.5.
 
-> ![https://upload.wikimedia.org/wikipedia/commons/6/6d/Exam\_pass\_logistic\_curve.jpeg](media/image1.jpeg){width="3.406632764654418in"
-> height="2.46875in"}
->
-> Figure 1 : Sample Sigmoid Function (En.wikipedia.org, 2018)
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Logistic-curve.svg/320px-Logistic-curve.svg.png)
+
+Figure 1 : Sample Sigmoid Function (En.wikipedia.org, 2018)
 
 Mathematically the sigmoid function looks like :
 
