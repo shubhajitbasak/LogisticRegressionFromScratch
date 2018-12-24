@@ -8,7 +8,7 @@ function, I am using classic Gradient Descent Algorithm.
 
 **[Details of the Algorithm]**:
 
-[Binary Classification Implementation:]
+[Binary Classification Implementation]:
 
 We will first try to build a binary classifier where there will be two
 types of dependent variable. As the Dependent variables are Binary in
