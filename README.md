@@ -117,19 +117,18 @@ implementing the classifier in vectorised form the classifier expects
 the input data in a matrix Form. Following are the Methods and their
 respective parameters.
 
-*[Class :]{.underline}* LogisticRegressor**(**alpha **=** 0.5**,**
-iterations **=** 15000**,** tol**=**1e-8**)**
+*Class :*  
+      *LogisticRegressor(alpha = 0.5 , iterations = 15000 , tol = 1e-8) * 
 
-*[Parameters:]{.underline}*
+*Parameters :*
 
 alpha : learning rate
 
-iterations : Maximum Number of Iterations for the Gradient Descent
-Iterations
+iterations : Maximum Number of Iterations for the Gradient Descent Iterations
 
 tol : maximum tolerance level for the cost function
 
-[Methods:]{.underline}
+*Methods :*
 
 Build the Model with the Training Data
 
@@ -137,43 +136,43 @@ fit (X,Y) --
 
 Parameters :
 
-X : ***{array-like, sparse matrix}, shape (m, n)***
+X : *{array-like, sparse matrix}, shape (m, n)*
 
 -   Training Feature Vector where m is the number of sample and n is the
     number of features
 
-> Y : ***array-like, shape (m,)***
+Y : *array-like, shape (m,)*
 
 -   Target (Dependent Variables) Vector Relative to X
 
-> Returns :
->
+Returns :
+
 > self : object
 
 predict(X) --
 
 Parameters :
 
-X : ***{array-like, sparse matrix}, shape (m, n)***
+X : *{array-like, sparse matrix}, shape (m, n)*
 
 -   Test Feature Vector where m is the number of sample and n is the
     number of features
 
 > Returns :
 >
-> ***array, shape(m)***
+> *array, shape(m)*
 
 -   Predicted Class Label per sample
 
-[Pre-Requisites]{.underline}:
+**Pre-Requisites :**
 
--   Code needs to be run in python [3.5 Or above]{.underline} as few
+-   Code needs to be run in python 3.5 Or above as few
     functionalities used is only available in it.
 
--   Before running the Class python library [numpy needs to be imported
-    as np]{.underline}
+-   Before running the Class python library numpy needs to be imported
+    as np
 
-[Assumptions]{.underline} :
+**Assumptions :**
 
 -   The Number of features should always be less than the number of
     examples
