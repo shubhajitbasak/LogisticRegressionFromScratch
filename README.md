@@ -6,9 +6,9 @@ Classification Algorithm as it is easy to implement, and we can extend
 the concept of Linear Regression to build the same. To minimise the cost
 function, I am using classic Gradient Descent Algorithm.
 
-**[Details of the Algorithm]{.underline}**:
+**[Details of the Algorithm]**:
 
-[Binary Classification Implementation:]{.underline}
+[Binary Classification Implementation:]
 
 We will first try to build a binary classifier where there will be two
 types of dependent variable. As the Dependent variables are Binary in
