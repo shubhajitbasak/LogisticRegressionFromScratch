@@ -29,12 +29,12 @@ here the threshold might be 0.5.
 
 Mathematically the sigmoid function looks like :
 
-$$g(z) = \frac{1}{1 + \ e^{- z}}$$
+$$g(z) = 1/(1 + \ e\hat{}( - z)\ )$$
 
 We know for Linear Regression the hypothesis Function for multivariate
 data looks like :
 
-$$h_{\theta}\left( x \right) = \ \theta_{0}x_{0} + \ \theta_{1}x_{1} + \ \theta_{1}x_{1} + \ldots\ldots\ldots\ldots\ldots\ldots + \ \theta_{n}x_{n}\ $$
+$$h\_\theta\ (x) = \ \theta\_ 0\ x\_ 0 + \ \theta\_ 1\ x\_ 1 + \ \theta\_ 1\ x\_ 1 + \ldots\ldots\ldots\ldots\ldots\ldots + \ \theta\_ n\ x\_ n\ \ $$
 
 > ,where $x_{0}$ is the bias term set to 1.
 
@@ -42,27 +42,17 @@ Here for mathematical simplicity we will use the Vectorised (Matrix )
 form.
 
 So, if there are n variables and m rows of data
-$\ \ \ X = \ \ \ \begin{bmatrix}
-x_{0}^{1} & \cdots & x_{n}^{1} \\
- \vdots & \ddots & \vdots \\
-x_{0}^{m} & \cdots & x_{n}^{m} \\
-\end{bmatrix}$ And $\theta = \ \begin{bmatrix}
-\theta_{0} \\
-. \\
-\begin{matrix}
-. \\
-. \\
-\theta_{n} \\
-\end{matrix} \\
-\end{bmatrix}$
+$\ \ \ X = \ \ \ \lbrack\blacksquare(x\_ 0\hat{}1\&\cdots\& x\_ n\hat{}1@ \vdots \& \ddots \& \vdots @x\_ 0\hat{}m\&\cdots\& x\_ n\hat{}m\ )\rbrack$
+And
+$\theta = \ \lbrack\blacksquare(\theta\_ 0@.@\blacksquare(.@.@\theta\_ n\ ))\rbrack$
 
 The hypothesis function in Vectorised form will looks like
-$H_{\theta}\left( X \right) = X\ \theta$
+$H\_\theta\ (X) = X\ \theta$
 
 Now we will extend the Hypothesis Function for Logistic Regression using
 the Sigmoid Function as --
 
-$$H_{\theta}\left( X \right) = \frac{1}{1 + \ e^{- X\ \theta}} = G(X\theta)$$
+$$H\_\theta\ (X) = 1/(1 + \ e\hat{}( - X\ \theta)\ ) = G(X\theta)$$
 
 > **Note**. -- Here we have taken the [Theta as a Column
 > Matrix]{.underline}
@@ -76,27 +66,27 @@ To get the minima we will take the First Order Partial Derivative and
 get the Gradient Function which in Vectorised form will looks like --
 
 > Gradient =
-> $\left( H_{\theta}\left( X \right) - Y \right)\ X = X^{T}\ (H_{\theta}\left( X \right) - Y)$
+> $(H\_\theta\ (X) - Y)\ \ X = X\hat{}T\ \ (H\_\theta\ (X) - Y)$
 
 Then we will try to get the Optimum Theta with Gradient Descent which
 looks like --
 
 > Repeat {
 >
-> $\theta\ : = \ \theta - \ {\frac{\alpha}{m}X}^{T}\ (H_{\theta}\left( X \right) - Y)$
+> $\theta\ : = \ \theta - \ 〖\alpha/m\ X〗\hat{}T\ \ (H\_\theta\ (X) - Y)$
 >
 > }
 
 ,where $\alpha$ is the learning rate and m is the total number of
 training data.
 
-After several Iteration we will get the $\theta_{\text{Opt}}$ which will
-give the best fit and will minimise the error between the hypothesis
-output and the actual Y value.
+After several Iteration we will get the $\theta\_ Opt$ which will give
+the best fit and will minimise the error between the hypothesis output
+and the actual Y value.
 
 So, the output of our Model will look like --
 
-$$H_{\theta_{\text{OPT}}} = \ X\theta_{\text{OPT}}$$
+$$H\_(\theta\_ OPT\ ) = \ X\theta\_ OPT$$
 
 Which gives the probability for the independent variables, as it's a
 binary classifier we will classify using some threshold and compare the
@@ -117,13 +107,12 @@ probability.
 
 Mathematically -
 
-$$h_{\theta}^{i}\left( x \right) = P\left( y = i \middle| x,\theta \right)\ \ \ \ i = 1,2,3,\ldots..\ No\ of\ Classes$$
+$$h\_\theta\hat{}i\ (x) = P(y = i│x,\theta)\ \ \ \ \ i = 1,2,3,\ldots..\ No\ of\ Classes$$
 
 Here P is the Probability for each class i. Here we will train the
-logistic classifier $h_{\theta}^{i}\left( x \right)$ for each class i to
-predict the probability that y = i . For a new input x to make the
-prediction we will pick the class i that maximises
-$h_{\theta}^{i}\left( x \right)$
+logistic classifier $h\_\theta\hat{}i\ (x)$ for each class i to predict
+the probability that y = i . For a new input x to make the prediction we
+will pick the class i that maximises $h\_\theta\hat{}i\ (x)$
 
 **[Design Decision and Specifications : ]{.underline}**
 
