@@ -40,9 +40,9 @@ data looks like :
 Here for mathematical simplicity we will use the Vectorised (Matrix )
 form.
 
-So, if there are n variables and m rows of data
-![](https://latex.codecogs.com/gif.latex?X%3D%20%5Cbegin%7Bbmatrix%7D%20x%5E%7B1%7D_0%20%26%20...%20%26%20x%5E%7B1%7D_n%5C%5C%20.%26%20.%20%26%20.%5C%5C%20x%5E%7Bm%7D_0%20%26%20%26%20x%5E%7Bm%7D_n%20%5Cend%7Bbmatrix%7D)
-And
+So, if there are n variables and m rows of data   
+![](https://latex.codecogs.com/gif.latex?X%3D%20%5Cbegin%7Bbmatrix%7D%20x%5E%7B1%7D_0%20%26%20...%20%26%20x%5E%7B1%7D_n%5C%5C%20.%26%20.%20%26%20.%5C%5C%20x%5E%7Bm%7D_0%20%26%20%26%20x%5E%7Bm%7D_n%20%5Cend%7Bbmatrix%7D)    
+And    
 ![](https://latex.codecogs.com/gif.latex?%5Ctheta%20%3D%20%5Cbegin%7Bbmatrix%7D%20%5Ctheta_0%5C%5C%20.%5C%5C%20.%5C%5C%20%5Ctheta_n%20%5Cend%7Bbmatrix%7D)
 
 The hypothesis function in Vectorised form will looks like
@@ -69,8 +69,8 @@ Gradient =
 Then we will try to get the Optimum Theta with Gradient Descent which
 looks like --
 
-> Repeat {
-![](https://latex.codecogs.com/gif.latex?%5Ctheta%20%5Cleftarrow%20%5Ctheta%20-%20%5Cfrac%7B%5Calpha%20%7D%7Bm%7DX%5E%7BT%7D%28H_%7B%5Ctheta%7D%28X%29-Y%29)
+> Repeat {   
+![](https://latex.codecogs.com/gif.latex?%5Ctheta%20%5Cleftarrow%20%5Ctheta%20-%20%5Cfrac%7B%5Calpha%20%7D%7Bm%7DX%5E%7BT%7D%28H_%7B%5Ctheta%7D%28X%29-Y%29)   
 > }
 
 ,where ![](https://latex.codecogs.com/gif.latex?%5Calpha) is the learning rate and m is the total number of
@@ -88,7 +88,7 @@ Which gives the probability for the independent variables, as it's a
 binary classifier we will classify using some threshold and compare the
 probability with the threshold.
 
-[Multi Class (One Vs All) Implementation: ]{.underline}
+**Multi Class (One Vs All) Implementation:**
 
 As I am implementing algorithm in vectorised form it will work for
 multiple variable as well.
@@ -110,7 +110,7 @@ logistic classifier ![](https://latex.codecogs.com/gif.latex?H_%7B%5Ctheta%7D%5E
 the probability that y = i . For a new input x to make the prediction we
 will pick the class i that maximises ![](https://latex.codecogs.com/gif.latex?H_%7B%5Ctheta%7D%5E%7Bi%7D%28x%29)
 
-**[Design Decision and Specifications : ]**
+**Design Decision and Specifications :**
 
 Here I am implementing the Algorithm using Python Language. As I am
 implementing the classifier in vectorised form the classifier expects
